@@ -1,5 +1,16 @@
-.example {
-    h1 {
-        color: green;
-    }
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+body {
+  background: #5491d3;
+  color: #1D69B6;
+  font: 1000 16px/1.6 'Open Sans', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 1em;
+}
+ 
+ 

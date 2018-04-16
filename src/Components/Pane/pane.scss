@@ -1,0 +1,64 @@
+.characterPanel {
+    -moz-border-radius: .6em;
+    -webkit-border-radius: .6em;
+    border-radius: .6em; 
+    background: #fff;
+	clear: both;
+	display: block;
+	float: left;
+    margin: 0;
+    padding: 1em;	
+    width: 36em;
+   .characterDetails {
+   	  float: right;
+   	  width: auto;
+	   	 h2 {
+	  		font: 1000 16px/1.6 'Open Sans', Helvetica, Arial, sans-serif;
+	   	 }
+	   	 p {
+	   	    color: #5F5F5F;	
+	   	 }
+	   	 h2, p {
+	   	    margin: 0;	
+	   	 }
+   }
+   .characterIcon {
+   	 margin-right: 1em;
+   }
+   .characterIcon, .characterDetails {
+   	 display: inline;
+   	 float: left;
+   }
+}
+
+
+@media screen and (max-device-width: 768px) { 
+	body {
+	  margin-top: 1em;
+	}
+	.outerContainer {
+		background: #FFF;
+	    -moz-border-radius: 2em;
+	    -webkit-border-radius: 2em;
+	    border-radius: 2em;
+	    float: left;
+	    padding: 3em 0;
+	    width: 100%; 		
+		.characterPanel {
+			width: 100%;
+			.characterIcon {
+			  margin: 1em 2em 1em 1em;	
+			  width: 24%;
+			}
+			.characterDetails {
+		      width: 70%;
+			 h2, p {
+		   	    font-size: 8vw;	
+		   	 }
+			}
+		    .characterIcon, .characterDetails {
+		   	  height: auto;
+		    }			
+		}
+	}
+}

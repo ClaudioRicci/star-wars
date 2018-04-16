@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "C-3P0",
+    "route": "C_3P0",    
+    "characterType": "hero",
+    "score": 2983,
+    "imageURL": "./Components/Pane/Icons/C3P-0.svg"
+  },
+  {
+  "id": 2,    
+    "name": "Darth Vader",
+    "route": "Darth_Vader",  
+    "characterType": "villain",
+    "score": 2676,
+    "imageURL": "./Components/Pane/Icons/vader.svg"
+  },
+  {
+    "id": 3,
+    "name": "BB-8",
+    "route": "BB_8",    
+    "characterType": "hero",
+    "score": 1292,
+    "imageURL": "./Components/Pane/Icons/bb-8.svg"
+  },
+  {
+    "id": 4,
+    "name": "Boba Fett",
+    "route": "Boba_Fett",    
+    "characterType": "villain",
+    "score": 872,
+    "imageURL": "./Components/Pane/Icons/fett.svg"
+  },    
+  {
+    "id": 5,
+    "name": "R2-D2",
+    "route": "R2_D2",     
+    "characterType": "hero",
+    "score": 680,
+    "imageURL": "./Components/Pane/Icons/r2-d2.svg"
+  }
+]

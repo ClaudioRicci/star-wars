@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import style from './styles/main.scss';
+import './main.scss';
+import { Tabs } from './Components/Tabs/tabs';
+import { Pane } from './Components/Pane/pane';
 
-const title = 'My Minimal React Webcpack Badssbcsdsdel dsdsSetup';
+const createReactClass = require('create-react-class');
+
+const title = 'Claudio Ricci Star Wars';
+
+const Stage = createReactClass({
+  render: function() {
+    return (	
+      <div>
+        <Tabs pagename={this.props.pagename} />
+      	<Pane/>
+      </div>
+    );
+  }
+});
+
 
 ReactDOM.render(
-  <div>{title}
-  <h1>Test</h1>
-  </div>,
+  <Stage pagename={title}/>,
   document.getElementById('app')
 );
 
