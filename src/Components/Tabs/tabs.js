@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './tabs.scss';
-import data from './characters.json';
+import data from './characters.json';  // Works
+import axios from 'axios' // Doesn't current work - would prefer to use this as axios Cross Browser compatible
 
 export class Tabs extends React.Component {
 
- /*constructor(props) {
+ constructor(props) {
     super(props);
-
+  
     this.state = {
       characters: [],
       isLoading: false,
@@ -15,12 +16,14 @@ export class Tabs extends React.Component {
     };
   }
 
+ /*  Needed more time to work on this - trying to use data drom 'Data' folder
+
 
   componentDidMount() {
       const data = axios.create({
-        baseURL: 'http://localhost:8080/'
+        baseURL: 'http://localhost:8080'
       })
-      data.get('characters.js')
+      data.get('Data/characters.json')
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -33,8 +36,9 @@ export class Tabs extends React.Component {
        this.setState({ isLoading: true });     
   }
 */
+
   render() {
-/*  const { characters, isLoading, error } = this.state;
+ const { characters, isLoading, error } = this.state;
 
     if (error) {
       return <p>{error.message}</p>;
@@ -43,7 +47,7 @@ export class Tabs extends React.Component {
     if (isLoading) {
       return <p>Loading ...</p>;
     }
-*/
+
       return (
           <div>
             <nav>

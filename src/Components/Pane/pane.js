@@ -19,7 +19,7 @@ export class Pane extends React.Component {
               <div className="characterDetails">
                   {
                     data.map(function(character){
-                      return <div><h2>{character.name}</h2><p>{character.score} Points</p></div>;
+                      return <div key={character.id}><h2>{character.name}</h2><p>{character.score} Points</p></div>;
                     })
                   }
               </div> 
