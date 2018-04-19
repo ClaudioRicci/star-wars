@@ -12,7 +12,7 @@ export class BB8 extends React.Component {
     });
 
       return (
-          <div className="outerContainer">
+          <div>
             <div className="characterPanel"> 
               <div className="characterIcon">
                 <BB8Image className="iconResize"/>

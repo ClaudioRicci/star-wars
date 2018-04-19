@@ -22,6 +22,9 @@ nav {
 	  background: #EAEAEA;
 	}; 
 }
+.innerContainer .characterPanel {
+	display: none;
+}
 
 .characterPanel {
     -moz-border-radius: .6em;
@@ -62,18 +65,27 @@ nav {
 	body {
 	  margin-top: 1em;
 	}
-	nav {
+	nav, .noneMobileView {
 		display: none;
 	}
-	.outerContainer {
+	.innerContainer .characterPanel {
+		-moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; 	
+		display: block;
+	}
+	.outerContainer, .innerContainer {
 		background: #FFF;
 	    -moz-border-radius: 2em;
 	    -webkit-border-radius: 2em;
 	    border-radius: 2em;
-	    float: left;
+			float: left;
+			margin: 1em 0;
 	    padding: 3em 0;
 	    width: 100%; 		
 		.characterPanel {
+			border-bottom: .2em #1D69B6 solid;
+			padding: 3em;
 			width: 100%;
 			.characterIcon {
 			  margin: 1em 2em 1em 1em;	
@@ -82,7 +94,7 @@ nav {
 				width: 100%;
 				height: 100%;	
 			  }	
-			}
+			}	
 			.characterDetails {
 		      width: 70%;
 			 h2, p {
@@ -93,5 +105,8 @@ nav {
 		   	  height: auto;
 		    }			
 		}
+		.lastPanel {
+			border: none;
+		}			
 	}
 }
