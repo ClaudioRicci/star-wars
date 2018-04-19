@@ -6,6 +6,19 @@ import C3POImage from './Icons/C3P-0.svg';
 
 export class C3P0 extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: 'C-3P0'
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({name: event.target.value});
+  }
+
   render() {
     const result = data.find((item) => {
         return item.name === 'C-3P0';
@@ -18,7 +31,7 @@ export class C3P0 extends React.Component {
                 <C3POImage className="iconResize"/>
               </div>
               <div className="characterDetails">
-                <div key={result.id}><h2>{result.name}</h2><p>{result.score} Points</p></div>
+                <div key={result.id}><input value={this.state.name} onChange={this.handleChange} /><p>{result.score} Points</p></div>
               </div>
             </div>
           </div>
