@@ -8,10 +8,11 @@ nav {
 	  border-radius: .6em .6em 0 0;  	   	  
 	  display: inline;
 	  margin-right: .1em;
-	  padding: .4em 1em;
+	  padding: .4em 0 .2em;
 	  a {
 		color: #1D69B6;  
 		text-decoration: none;
+		padding: .4em 1em 0;
 	  }
 	};
 	li:hover, li:active {
@@ -48,6 +49,7 @@ nav {
    }
    .characterIcon {
 		margin-right: 1em;
+		width: 3em;
    }
    .characterIcon, .characterDetails {
    	 display: inline;
