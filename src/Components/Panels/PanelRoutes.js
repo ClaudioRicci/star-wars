@@ -12,25 +12,42 @@ import { MobileList } from './MobileList';
 import './pane.scss';
 
 export class PanelRoutes extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      nameOne: 'C-3P0',
+      nameTwo: 'Darth Vader',
+      nameThree: 'BB-8',
+      nameFour: 'Boba Fett',
+      nameFive: 'R2-D2'               
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+  }  
     render() {
           return (
             <Router>
                 <div>
                     <nav>
                         <li>
-                          <Link to="/C_3P0">C3P0</Link>
+                          <Link to="/C_3P0"><input class="CP0_Tab" type="text" value={this.state.nameOne} name="nameOne" onChange={this.handleChange} /></Link>
                         </li>
                         <li>
-                          <Link to="/Darth_Vader">Darth Vader</Link>
+                          <Link to="/Darth_Vader"><input class="DarthVader_Tab" type="text" value={this.state.nameTwo} name="nameTwo" onChange={this.handleChange} /></Link>
                         </li>
                         <li>
-                          <Link to="/BB_8">BB-8</Link>
+                          <Link to="/BB_8"><input class="BB8_Tab" type="text" value={this.state.nameThree} name="nameThree" onChange={this.handleChange} /></Link>
                         </li>
                         <li>
-                          <Link to="/Boba_Fett">Boba Fett</Link>
+                          <Link to="/Boba_Fett"><input class="BobaFett_Tab" type="text" value={this.state.nameFour} name="nameFour" onChange={this.handleChange} /></Link>
                         </li>
                         <li>
-                          <Link to="/R2_D2">R2-D2</Link>
+                          <Link to="/R2_D2"><input class="R2D2_Tab" type="text" value={this.state.nameFive} name="nameFive" onChange={this.handleChange} /></Link>
                         </li>               
                     </nav>
                     <div className="noneMobileView">       
