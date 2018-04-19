@@ -12,7 +12,7 @@ export class C3P0 extends React.Component {
     });
 
       return (
-          <div className="outerContainer">
+          <div>
             <div className="characterPanel"> 
               <div className="characterIcon">
                 <C3POImage className="iconResize"/>

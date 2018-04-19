@@ -7,6 +7,7 @@ import { C3P0 } from './C3P0';
 import { DarthVader } from './DarthVader';
 import { BobaFett } from './BobaFett';
 import { R2D2 } from './R2D2';
+import { MobileList } from './MobileList';
 
 import './pane.scss';
 
@@ -31,13 +32,16 @@ export class PanelRoutes extends React.Component {
                         <li>
                           <Link to="/R2_D2">R2-D2</Link>
                         </li>               
-                    </nav>       
+                    </nav>
+                    <div className="noneMobileView">       
                     <Route exact path="/" component={C3P0} />
                     <Route path="/C_3P0" component={C3P0} />
                     <Route path="/Darth_Vader" component={DarthVader} />
                     <Route path="/BB_8" component={BB8} />
                     <Route path="/Boba_Fett" component={BobaFett} />      
-                    <Route path="/R2_D2" component={R2D2} />             
+                    <Route path="/R2_D2" component={R2D2} />
+                    </div>
+                    <Route path="/" component={MobileList} />              
                 </div>
             </Router>
           );

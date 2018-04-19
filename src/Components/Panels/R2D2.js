@@ -12,8 +12,8 @@ export class R2D2 extends React.Component {
     });
 
       return (
-          <div className="outerContainer">
-            <div className="characterPanel"> 
+          <div>
+            <div className="characterPanel lastPanel"> 
               <div className="characterIcon">
                 <R2D2Image className="iconResize"/>
               </div>

@@ -12,7 +12,7 @@ export class BobaFett extends React.Component {
     });
 
       return (
-          <div className="outerContainer">
+          <div>
             <div className="characterPanel"> 
               <div className="characterIcon">
                 <BobaFettImage className="iconResize"/>
