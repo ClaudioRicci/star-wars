@@ -1,25 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './main.scss';
-import { Tabs } from './Components/Tabs/tabs';
-import { Pane } from './Components/Pane/pane';
+import { render } from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { PanelRoutes } from './Components/Panels/PanelRoutes';
 
-const createReactClass = require('create-react-class');
+import './main.scss';
+
 const title = 'Claudio Ricci Star Wars';
 
-const Stage = createReactClass({
-  render: function() {
-    return (	
+class App extends React.Component {
+  render() {
+    return (
       <div>
-        <Tabs/>
-      	<Pane/>
+        <PanelRoutes/>
       </div>
     );
   }
-});
+}
 
 ReactDOM.render(
-  <Stage pagename={title}/>,
+  <App pagename={title}/>,
   document.getElementById('app')
 );
 
