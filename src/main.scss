@@ -6,11 +6,21 @@
   box-sizing: border-box;
 }
 body {
-  background: #5491d3;
-  color: #1D69B6;
+  background: #fff;
+  color: #979797;
   font: 1000 16px/1.6 'Open Sans', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0 1em;
+  text-align: center;
+}
+
+.gameSurround {
+	border: 1px #979797 solid;
+	display: inline-block;
+	height: auto;
+	margin: 0 auto;
+	padding: 36px 16px;
+	width: 586px;
 }
  
  

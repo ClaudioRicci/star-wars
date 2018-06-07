@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Kerge Kotzher",
+    "imageURL": "./Components/Pane/Icons/photo_needed.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Emily M.Mills",
+    "imageURL": "./Components/Pane/Icons/photo_needed.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Oronzo Gallo",
+    "imageURL": "./Components/Pane/Icons/photo_needed.jpg"
+  },   
+  {
+    "id": 4,
+    "name": "Leo Matic",
+    "imageURL": "./Components/Pane/Icons/photo_needed.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Nicole C. Lewis",
+    "imageURL": "./Components/Pane/Icons/photo_needed.jpg"
+  },   
+  {
+    "id": 6,
+    "name": "Feng Yang",
+    "imageURL": "./Components/Pane/Icons/photo_needed.jpg"
+  },  
+]

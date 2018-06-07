@@ -1,0 +1,21 @@
+.gameRow {
+	display: block;
+}
+.rowLeft {
+	border: 1px red solid;
+	float: left;
+	margin-left: 80px;
+	.playersRow div {
+	    border: 1px red solid;
+		display: inline;
+		.victoryLight {
+			color: #3b9a49;
+			font-size: 36px;
+			vertical-align: middle;
+		}
+	}
+}
+.rowRight {
+	border: 1px blue solid;	
+	float: right;
+}

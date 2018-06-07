@@ -1,42 +1,32 @@
 [
   {
     "id": 1,
-    "name": "C-3P0",
-    "route": "C_3P0",    
-    "characterType": "hero",
-    "score": 2983,
-    "imageURL": "./Components/Pane/Icons/C3P-0.svg"
+    "name": "Kerge Kotzher",
+    "imageURL": "./Components/Icons/photo_needed.jpg"
   },
   {
-  "id": 2,    
-    "name": "Darth Vader",
-    "route": "Darth_Vader",  
-    "characterType": "villain",
-    "score": 2676,
-    "imageURL": "./Components/Pane/Icons/vader.svg"
+    "id": 2,
+    "name": "Emily M.Mills",
+    "imageURL": "./Components/Icons/photo_needed.jpg"
   },
   {
     "id": 3,
-    "name": "BB-8",
-    "route": "BB_8",    
-    "characterType": "hero",
-    "score": 1292,
-    "imageURL": "./Components/Pane/Icons/bb-8.svg"
-  },
+    "name": "Oronzo Gallo",
+    "imageURL": "./Components/Icons/photo_needed.jpg"
+  },   
   {
     "id": 4,
-    "name": "Boba Fett",
-    "route": "Boba_Fett",    
-    "characterType": "villain",
-    "score": 872,
-    "imageURL": "./Components/Pane/Icons/fett.svg"
-  },    
+    "name": "Leo Matic",
+    "imageURL": "./Components/Icons/photo_needed.jpg"
+  },
   {
     "id": 5,
-    "name": "R2-D2",
-    "route": "R2_D2",     
-    "characterType": "hero",
-    "score": 680,
-    "imageURL": "./Components/Pane/Icons/r2-d2.svg"
-  }
+    "name": "Nicole C. Lewis",
+    "imageURL": "./Components/Icons/photo_needed.jpg"
+  },   
+  {
+    "id": 6,
+    "name": "Feng Yang",
+    "imageURL": "./Components/Icons/photo_needed.jpg"
+  },  
 ]

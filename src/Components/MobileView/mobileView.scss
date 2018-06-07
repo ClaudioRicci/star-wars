@@ -1,0 +1,94 @@
+input, input:focus {
+	color: #1D69B6;
+	border: none;
+	background: none;
+}
+h2, input {
+	font: 1000 16px/1.6 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.innerContainer .characterPanel {
+	display: none;
+}
+
+.characterPanel {
+    -moz-border-radius: .6em;
+    -webkit-border-radius: .6em;
+    border-radius: .6em; 
+    background: #fff;
+	clear: both;
+	display: block;
+	float: left;
+    margin: 0;
+    padding: 1em;	
+    width: 36em;
+   .characterDetails {
+   	  float: right;
+	  width: auto;
+		 input, input:focus {
+			width: 100%;
+		 }			 
+	   	 p {
+	   	    color: #5F5F5F;	
+	   	 }
+	   	 h2, p {
+	   	    margin: 0;	
+	   	 }
+   }
+   .characterIcon {
+		margin-right: 1em;
+		width: 3em;
+   }
+   .characterIcon, .characterDetails {
+   	 display: inline;
+   	 float: left;
+   }
+}
+
+
+@media screen and (max-device-width: 768px) { 
+	body {
+	  margin-top: 1em;
+	}
+	.noneMobileView {
+		display: none;
+	}
+	.innerContainer .characterPanel {
+		-moz-border-radius: 0;
+	    -webkit-border-radius: 0;
+	    border-radius: 0; 	
+		display: block;
+	}
+	.outerContainer, .innerContainer {
+		background: #FFF;
+	    -moz-border-radius: 2em;
+	    -webkit-border-radius: 2em;
+	    border-radius: 2em;
+		float: left;
+		margin: 1em 0;
+	    padding: 3em 0;
+	    width: 100%; 		
+		.characterPanel {
+			border-bottom: .2em #1D69B6 solid;
+			padding: 3em;
+			width: 100%;
+			.characterIcon {
+			  margin: 1em 2em 1em 1em;	
+			  width: 24%;
+			  .iconResize {
+				width: 100%;
+				height: 100%;	
+			  }	
+			}	
+			.characterDetails {
+		      width: 70%;
+			  h2, p, input {
+		   	    font-size: 8vw;	
+			  }
+			}
+		    .characterIcon, .characterDetails {
+		   	  height: auto;
+		    }			
+		}			
+	}
+}
